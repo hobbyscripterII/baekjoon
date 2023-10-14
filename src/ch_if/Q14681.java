@@ -6,8 +6,7 @@ import java.io.InputStreamReader;
 public class Q14681 {
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		int x = Integer.parseInt(br.readLine());
-		int y = Integer.parseInt(br.readLine());
+		int x = Integer.parseInt(br.readLine()), y = Integer.parseInt(br.readLine());
 		int quadrant = 0;
 		
 		if(x > 0 && y > 0) {
