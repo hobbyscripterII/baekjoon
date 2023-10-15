@@ -1,4 +1,4 @@
-package operation;
+package ch_operation;
 
 import java.util.Scanner;
 
