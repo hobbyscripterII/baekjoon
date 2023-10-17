@@ -11,19 +11,14 @@ public class Q10818 {
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
         String[] arr = br.readLine().split(" ");
-        int min = 0, max = 0;
+        int min = Integer.parseInt(arr[0]), max = Integer.parseInt(arr[0]);
 
-        for (int i = 1; i < arr.length; i++) {
-            min = Integer.parseInt(arr[i]);
-            max = Integer.parseInt(arr[i]);
-
-            if (arr.length > arr.length - 1) {
-                if (min > Integer.parseInt(arr[i])) {
-                    min = Integer.parseInt(arr[i]);
-                }
-                if (max < Integer.parseInt(arr[i])) {
-                    max = Integer.parseInt(arr[i]);
-                }
+        for (int j = 1; j < arr.length; j++) {
+            if (min > Integer.parseInt(arr[j])) {
+                min = Integer.parseInt(arr[j]);
+            }
+            if (max < Integer.parseInt(arr[j])) {
+                max = Integer.parseInt(arr[j]);
             }
         }
 
